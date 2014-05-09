@@ -26,14 +26,19 @@ public class InToEng {
 			a[i]=n%10;
 			n=n/10;
 		}
-		
+
 		String str="";
-		if((a.length-1)/3==1){
+		if((a.length-1)/3==2){
+			str += xyz(a,2) + " million ";
+			str += xyz(a,1) + " thousand ";
+			str += xyz(a,0);
+		}
+		else if((a.length-1)/3==1){
 			str += xyz(a,1) + " thousand ";
 			str += xyz(a,0);
 		}
 		//ˆê‚Â‚Ìif•¶‚ÅˆêŒÂ‚¾‚¯xyz‚ðŽg‚¤‚æ‚¤‚É‚µ‚½‚©‚Á‚½
-		if((a.length-1)/3==0)
+		else if((a.length-1)/3==0)
 			str += xyz(a,0);
 
 		return str;
