@@ -16,7 +16,7 @@ public class InToEng {
 		String[] a ={"zero","one","two","three","four","five","six","seven","eight","nine"};
 		return a[n];
 
-		//“Ç‚Ýž‚ñ‚¾”’l‚ð‚P‚ÌˆÊ‚©‚çˆêŒ…‚¸‚Â”z—ñ‚É“ü‚ê‚Ä‚é
+		//“Ç‚Ýž‚ñ‚¾”’l‚ð‚P‚ÌˆÊ‚©‚çˆêŒ…‚¸‚Â”z—ñ‚É“ü‚ê‚é
 /*
 		int a[]=new int[10];
 		for(int i=0;n/10>0;i++)
