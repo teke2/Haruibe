@@ -11,10 +11,7 @@ public class InToEng {
 
 	//数値を英訳する変換するメソッド
 	static String translateEng(int n){
-
-	
 		//読み込んだ数値の桁数を求める
-
 		int y=n;
 		//元々の数値が0だったらzeroを返す
 		if(n==0) return "zero";
@@ -29,14 +26,15 @@ public class InToEng {
 			a[i]=n%10;
 			n=n/10;
 		}
+		
 		String str="";
 		if((a.length-1)/3==1){
 			str += xyz(a,1) + " thousand ";
 			str += xyz(a,0);
 		}
+		//一つのif文で一個だけxyzを使うようにしたかった
 		if((a.length-1)/3==0)
 			str += xyz(a,0);
-		
 
 		return str;
 	}
@@ -54,6 +52,4 @@ public class InToEng {
 		str+=s1[b[0+3*c]];
 		return str;
 	}	
-
-
 }
