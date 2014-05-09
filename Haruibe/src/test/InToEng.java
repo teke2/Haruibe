@@ -11,6 +11,18 @@ public class InToEng {
 
 	//数値を英訳する変換するメソッド
 	static String translateEng(int n){
-		return"";
+
+		//0~9が入力されたらStringの中の文字列をかえす
+		String[] a ={"zero","one","two","three","four","five","six","seven","eight","nine"};
+		return a[n];
+
+		//読み込んだ数値を１の位から一桁ずつ配列に入れてる
+/*
+		int a[]=new int[10];
+		for(int i=0;n/10>0;i++)
+			a[i]=n%10;
+		String c ="";
+		return c;
+		*/
 	}
 }
