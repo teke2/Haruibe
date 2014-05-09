@@ -38,8 +38,6 @@ public class InToEng {
 			else if(a.length>1) str +=s3[a[1]]+" ";
 		//•¶Žš—ñ‚ª‹ó‚¾‚Á‚½‚ç0•Ô‚·
 		str+=s1[a[0]];
-
 		return str;
-
 	}
 }
